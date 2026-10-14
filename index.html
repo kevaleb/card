@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,follow">
+<title>Kevin LeBaron · While You're In Town</title>
+<meta name="description" content="Kevin LeBaron, Co-Founder, While You're In Town. Save the contact or send yours.">
+<style>
+  :root{--brand:#e03c2b;--ink:#111;--muted:#6b6b6b;--line:#e6e6e6;--bg:#fff;}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#f3f3f3;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .card{max-width:430px;margin:0 auto;min-height:100dvh;background:var(--bg);display:flex;flex-direction:column}
+  .band{background:var(--brand);color:#fff;padding:18px 20px 44px;position:relative}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px}
+  .brand .w{width:28px;height:28px;border-radius:7px;background:#fff;color:var(--brand);display:grid;place-items:center;font-weight:800;font-size:15px}
+  .avatar{position:absolute;left:20px;bottom:-34px;width:84px;height:84px;border-radius:50%;background:#fff;border:4px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.12);display:grid;place-items:center;color:var(--brand);font-weight:800;font-size:30px;overflow:hidden}
+  .avatar img{width:100%;height:100%;object-fit:cover}
+  .body{padding:48px 20px 20px;flex:1}
+  h1{margin:0;font-size:24px;letter-spacing:-.2px}
+  .sub{margin:4px 0 0;color:var(--muted);font-size:15px}
+  .actions{display:flex;justify-content:space-between;margin:22px 0 10px;gap:6px}
+  .actions a{flex:1;text-decoration:none;color:var(--ink);text-align:center;font-size:12px}
+  .actions .circ{width:48px;height:48px;margin:0 auto 6px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;color:var(--brand)}
+  .actions svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .rows{border-top:1px solid var(--line)}
+  .row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .row span{color:var(--muted)}
+  .row a{color:var(--ink);text-decoration:none}
+  .pill{display:inline-block;margin-top:14px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+  .cta{padding:0 20px 14px}
+  .btn{display:block;width:100%;border-radius:999px;padding:14px;font-size:16px;font-weight:600;text-align:center;text-decoration:none;cursor:pointer;border:1.5px solid var(--brand);font-family:inherit}
+  .btn.primary{background:var(--brand);color:#fff}
+  .btn.secondary{background:#fff;color:var(--ink);border-color:var(--ink);margin-top:10px}
+  .foot{text-align:center;font-size:12px;color:var(--muted);padding:6px 20px 24px}
+  .foot a{color:var(--muted)}
+  /* share sheet */
+  .sheet{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;align-items:flex-end;justify-content:center;z-index:9}
+  .sheet.open{display:flex}
+  .panel{background:#fff;width:100%;max-width:430px;border-radius:18px 18px 0 0;padding:18px 20px 28px}
+  .panel h2{margin:0 0 4px;font-size:18px}
+  .panel p{margin:0 0 14px;color:var(--muted);font-size:14px}
+  label{display:block;font-size:13px;color:var(--muted);margin:10px 0 4px}
+  input[type=text],input[type=tel],input[type=email]{width:100%;font-size:16px;padding:12px;border:1.5px solid var(--line);border-radius:10px;font-family:inherit}
+  .opt{display:flex;align-items:center;gap:8px;font-size:14px;margin:14px 0}
+  .legal{font-size:12px;color:var(--muted);margin:6px 0 12px}
+  .thanks{display:none;text-align:center;padding:40px 20px}
+  .thanks h2{margin:0 0 6px}
+</style>
+</head>
+<body>
+<div class="card" id="card">
+  <div class="band">
+    <div class="brand"><span class="w">W</span> While You're In Town</div>
+    <div class="avatar" id="avatar">KL</div>
+  </div>
+  <div class="body">
+    <h1>Kevin LeBaron</h1>
+    <p class="sub">Co-Founder, While You're In Town</p>
+    <div class="actions">
+      <a href="tel:+14356807669"><div class="circ"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2.1z"/></svg></div>Call</a>
+      <a href="sms:+14356807669"><div class="circ"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>Text</a>
+      <a href="mailto:kevin@whileyoureintown.com"><div class="circ"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>Email</a>
+      <a href="https://whileyoureintown.com" target="_blank" rel="noopener"><div class="circ"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>Website</a>
+    </div>
+    <div class="rows">
+      <div class="row"><span>Mobile</span><a href="tel:+14356807669">(435) 680-7669</a></div>
+      <div class="row"><span>Email</span><a href="mailto:kevin@whileyoureintown.com">kevin@whileyoureintown.com</a></div>
+      <div class="row"><span>Web</span><a href="https://whileyoureintown.com" target="_blank" rel="noopener">whileyoureintown.com</a></div>
+    </div>
+  </div>
+  <div class="cta">
+    <a class="btn primary" href="kevin.vcf" download="Kevin LeBaron.vcf" id="save">Save contact</a>
+    <button class="btn secondary" id="share">Send Kevin your info</button>
+  </div>
+  <div class="foot"><a href="https://whileyoureintown.com" target="_blank" rel="noopener">See us on While You're In Town</a></div>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true">
+  <form class="panel" id="form">
+    <div id="fields">
+      <h2>Send Kevin your info</h2>
+      <p>Your phone will offer to fill these in.</p>
+      <label for="n">Name</label><input id="n" type="text" name="name" autocomplete="name" required>
+      <label for="t">Phone</label><input id="t" type="tel" name="tel" autocomplete="tel">
+      <label for="e">Email</label><input id="e" type="email" name="email" autocomplete="email">
+      <div class="opt"><input id="u" type="checkbox"><label for="u" style="margin:0;color:var(--ink)">Send me updates from While You're In Town</label></div>
+      <div class="legal">By entering your email, you agree Kevin can email you.</div>
+      <button class="btn primary" type="submit">Send</button>
+      <button class="btn secondary" type="button" id="cancel">Cancel</button>
+    </div>
+    <div class="thanks" id="thanks">
+      <h2 id="thx">Thanks.</h2>
+      <p>Kevin has your info.</p>
+      <button class="btn secondary" type="button" id="close">Done</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  const sheet=document.getElementById('sheet'),form=document.getElementById('form');
+  document.getElementById('share').onclick=()=>{sheet.classList.add('open');document.getElementById('n').focus()};
+  document.getElementById('cancel').onclick=()=>sheet.classList.remove('open');
+  document.getElementById('close').onclick=()=>{sheet.classList.remove('open');document.getElementById('fields').style.display='';document.getElementById('thanks').style.display='none';form.reset()};
+  form.onsubmit=(ev)=>{
+    ev.preventDefault();
+    const n=document.getElementById('n').value.trim(),t=document.getElementById('t').value.trim(),e=document.getElementById('e').value.trim(),u=document.getElementById('u').checked;
+    const subject=encodeURIComponent(`${n} shared their info from your card`);
+    const body=encodeURIComponent(`Name: ${n}\nPhone: ${t||'—'}\nEmail: ${e||'—'}\nUpdates: ${u?'yes':'no'}\n\nSent from Kevin's digital business card.`);
+    // No server behind this page: the visitor's own mail app carries the message to Kevin.
+    window.location.href=`mailto:kevin@whileyoureintown.com?subject=${subject}&body=${body}`;
+    document.getElementById('thx').textContent=`Thanks, ${n.split(' ')[0]||'friend'}.`;
+    document.getElementById('fields').style.display='none';document.getElementById('thanks').style.display='block';
+  };
+</script>
+</body>
+</html>
